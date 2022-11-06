@@ -9,7 +9,9 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("input a number please");
         Scanner input = new Scanner(System.in);
+
         int n = Integer.parseInt(input.nextLine());
+
 
         for (int i = 1; i < n; i++) {
             n += i;
@@ -20,7 +22,11 @@ public class Main {
     }
     int sumOfNumbers(int n) {
 
-        return 0;
+        for (int x = 1; x <= n; x++){
+            n += x;
+        }
+
+        return n;
     }
     
     // for Extra Credit
