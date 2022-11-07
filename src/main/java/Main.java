@@ -10,23 +10,23 @@ public class Main {
         System.out.println("input a number please");
         Scanner input = new Scanner(System.in);
 
-        int n = Integer.parseInt(input.nextLine());
+        int num = input.nextInt();
+        int total = sumOfNumbers(num);
+
+        System.out.println(total);
 
 
-        for (int i = 1; i < n; i++) {
-            n += i;
-        }
-        int answer = n;
 
 
     }
-    int sumOfNumbers(int n) {
+    static int sumOfNumbers(int n) {
+        int sum = 0;
 
         for (int x = 1; x <= n; x++){
-            n += x;
+            sum += x;
         }
 
-        return n;
+        return sum;
     }
     
     // for Extra Credit
